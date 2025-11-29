@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(mount-rundle-nightscape-banff-national-park-reflections-3840x2160-28.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  background-color: transparent;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.card > input[type="text"] {
+  height: 40px;
+  width: 20rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.486);
+  margin: 20px;
+}
+
+input:focus {
+  outline: 2px solid dodgerblue;
+  border: 2px solid dodgerblue;
+}
+
+.card > button {
+  padding: 7px;
+  border-radius: 20px;
+  background-color: green;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.486);
+  margin-right: 20px;
+  transition: 1s transform ;
+  font-size: 20  px;
+}
+
+.card > button:hover{
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px black;
+  cursor: pointer;
+}
+
+.card {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  margin: 10px 40rem;
+  border: 2px solid rgba(255, 255, 255, 0.199);
+  border-radius: 20px;
+}
+
+.card > h1 span  {
+  background-image: linear-gradient(to right, rgb(181, 181, 187), rgb(66, 139, 191));
+  background-clip: text;
+  color: transparent;
+  font-size: 80px;
+}
+
+.card-list {
+  margin: 20px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.51);
+  backdrop-filter: blur(30px);
+  border: 3px solid rgba(255, 255, 255, 0.247);
+  border-radius: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.708);
+}
+
+.card-text {
+  flex: 1;
+  text-align: left;
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+button.hapus {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button.edit {
+  background-color: wheat;
+  padding: 8px 13px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button.edit:hover,
+button.hapus:hover{
+  transform: scale(1.1);
+  box-shadow: 4px 5px 8px black;
+}
